@@ -10,6 +10,6 @@ npm start
 
 可以通过手机或者电脑访问web server的小车控制页面，远程控制小车。
 
-[树莓派3遥控小车制作（一）](https://www.jianshu.com/p/9323485e8dc4)
+[nodejs实现树莓派3遥控小车（一）](https://www.jianshu.com/p/9323485e8dc4)
 
-[树莓派3遥控小车制作（二）](https://www.jianshu.com/p/3498a14ba6b2)
+[nodejs实现树莓派3遥控小车（二）](https://www.jianshu.com/p/3498a14ba6b2)
