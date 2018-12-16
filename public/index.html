@@ -1,0 +1,68 @@
+<html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<script>
+    function directionBtnClick(direction) {
+        var url = "car/" + direction;
+        var request = new XMLHttpRequest();
+        request.open("GET", url);
+        request.send(null);
+    }
+</script>
+<style type="text/css">
+    span.car {
+        position: absolute;
+        height: 480px;
+    }
+
+    button.top {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        margin-left: 95px
+    }
+
+    button.left {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        margin-top: 55px;
+    }
+
+    button.right {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        margin-top: 55px;
+        margin-left: 190px
+    }
+
+    button.bottom {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        margin-top: 110px;
+        margin-left: 95px
+    }
+
+    button.stop {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        margin-top: 55px;
+        margin-left: 95px;
+    }
+</style>
+<head>
+    <title>car control page</title>
+</head>
+<body>
+    <span id="car_control" class="car">
+        <button class="top" onclick="directionBtnClick('forward')">Forward</button>
+        <button class="left" id="L" onclick="directionBtnClick('left')">Left</button>
+        <button class="stop" id="L" onclick="directionBtnClick('stop')">Stop</button>
+        <button class="right" id="R" onclick="directionBtnClick('right')">Right</button>
+        <button class="bottom" id="B" onclick="directionBtnClick('back')">Back</button>
+    </span>
+</body>
+</html>
